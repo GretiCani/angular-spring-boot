@@ -1,0 +1,7 @@
+
+<label for="username">Username :</label>
+<input type="text" id='username' name="username" [(ngModel)]='username'>
+<label for="password">Password :</label>
+<input type="password" name="password" id="password" [(ngModel)]='password'>
+<button (click)='authenticate()' class="btn btn-primary">Login</button>
+<div class="alert alert-danger" role="alert" *ngIf='invalidLogin'> {{invalidMessage}}</div>
